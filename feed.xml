@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-01T22:53:59-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Enzo Barrett</title><subtitle>Hey! Welcome to my site.</subtitle><entry><title type="html">Using highlight.js with Jekyll</title><link href="http://localhost:4000/2019/04/11/jekyll-highlightjs.html" rel="alternate" type="text/html" title="Using highlight.js with Jekyll" /><published>2019-04-11T00:00:00-06:00</published><updated>2019-04-11T00:00:00-06:00</updated><id>http://localhost:4000/2019/04/11/jekyll-highlightjs</id><content type="html" xml:base="http://localhost:4000/2019/04/11/jekyll-highlightjs.html">&lt;p&gt;292&lt;/p&gt;
+&lt;pre&gt;
+&lt;code class=&quot;json&quot;&gt;{
+  &quot;format&quot;        : &quot;syntax highlighting example&quot;,
+  &quot;language&quot;      : &quot;json&quot;,
+  highlight.js: 
+  {
+    &quot;languages&quot;   : 185,
+    &quot;styles&quot;      : 89,
+    &quot;dark-styles&quot; : 51
+  },
+  rogue:
+  {
+    &quot;languages&quot;   : 100,
+    &quot;styles&quot;      : 20,
+    &quot;dark-styles&quot; : 5
+  }
+}
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;It&amp;#8217;s 2019 and everybody seems to be using a dark IDE; why not have dark code snippets on your site? There are many syntax highlighting options for Jekyll, the main one being Rogue. Highlighting with Rogue works well and is easy, but there are benefits in using highlight.js instead. Advantages that highlight.js has over Rouge are as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;More languages supported&lt;/li&gt;
+  &lt;li&gt;Far more styles&lt;/li&gt;
+  &lt;li&gt;The ability to pick and choose what languages you include&lt;/li&gt;
+  &lt;li&gt;Automatic language detection&lt;/li&gt;
+  &lt;li&gt;Better documentation&lt;/li&gt;
+  &lt;li&gt;Much better dark themes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I personally did not like any of the pre-made dark themes for rogue. There is the ability to make your own but why do that when there are so many great themes already out there?&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-setup-highlightjs&quot;&gt;How to setup highlight.js&lt;/h2&gt;
+&lt;h3 id=&quot;source-the-files&quot;&gt;Source the files&lt;/h3&gt;
+&lt;p&gt;You are going to need to source the highlight.js files in every post. First, you want to create a file to override the default header. To override a theme file a directory and file need to be created with the same names and the file will override the theme default.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code class=&quot;bash&quot;&gt;# cd to your Jekyll project directory
+cd $YOURDIRECTORY
+
+# first make a new directory in your Jekyll folder to override the proper file
+mkdir _includes
+
+# find the directory the default files are in
+bundle show minima
+
+# cp the header file
+cp $YOURLOCATION/_includes/head.html _includes/
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;option-1-download-files-locally&quot;&gt;Option 1: Download files locally&lt;/h4&gt;
+
+&lt;h4 id=&quot;option-2-use-a-content-delivery-network&quot;&gt;Option 2: Use a content delivery network&lt;/h4&gt;</content><author><name></name></author><summary type="html">44 { &quot;format&quot; : &quot;syntax highlighting example&quot;, &quot;language&quot; : &quot;json&quot;, highlight.js: { &quot;languages&quot; : 185, &quot;styles&quot; : 89, &quot;dark-styles&quot; : 51 }, rogue: { &quot;languages&quot; : 100, &quot;styles&quot; : 20, &quot;dark-styles&quot; : 5 } }</summary></entry><entry><title type="html">Welcome to My Site!</title><link href="http://localhost:4000/jekyll/update/2019/04/09/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to My Site!" /><published>2019-04-09T21:59:40-06:00</published><updated>2019-04-09T21:59:40-06:00</updated><id>http://localhost:4000/jekyll/update/2019/04/09/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/09/welcome-to-jekyll.html">&lt;p&gt;Hello and welcome to my blog! Writing blog posts is something I’ve never done before, so this will be an adventure. Below you will find a list of topics I may write about. Feel free to &lt;a href=&quot;mailto:enzobarrett@gmail.com&quot;&gt;send me an email&lt;/a&gt; about other topics you’d like me to write about.&lt;/p&gt;
+
+&lt;p&gt;Possible topics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apache
+    &lt;ul&gt;
+      &lt;li&gt;Site configuration&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Linux
+    &lt;ul&gt;
+      &lt;li&gt;Vim&lt;/li&gt;
+      &lt;li&gt;Command Line Stuff&lt;/li&gt;
+      &lt;li&gt;General System Administration&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Programming
+    &lt;ul&gt;
+      &lt;li&gt;Python&lt;/li&gt;
+      &lt;li&gt;Chrome/Firefox extensions&lt;/li&gt;
+      &lt;li&gt;C&lt;/li&gt;
+      &lt;li&gt;qt&lt;/li&gt;
+      &lt;li&gt;Plasmoids&lt;/li&gt;
+      &lt;li&gt;Jekyll&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My new blog is setup on a static site generator called Jekyll. A great benefit of Jekyll is its seamless integration with Github. Instead of static html being hosted with Github pages Jekyll gives you addition features, like a custom 404 page! 
+&lt;img src=&quot;/assets/img/jekyll.svg&quot; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code class=&quot;bash&quot;&gt;# Install from gem
+gem update
+gem install jekyll
+# Or install from AUR
+yay -S jekyll
+# Create your new site
+jekyll new mynewsite
+# cd to it
+cd mynewsite
+bundle exec jekyll serve
+# Now just go to http://localhost:4000
+# There is your new site
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;If you are interested in setting up you own site I would suggest watching &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&quot;&gt;this&lt;/a&gt; series on YouTube. Another resource you could reference is the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll Docs&lt;/a&gt; for in depth information on all of Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Yours Truly,&lt;br /&gt;
+Enzo&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello and welcome to my blog! Writing blog posts is something I’ve never done before, so this will be an adventure. Below you will find a list of topics I may write about. Feel free to send me an email about other topics you’d like me to write about.</summary></entry></feed>
